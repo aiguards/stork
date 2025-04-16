@@ -242,7 +242,9 @@ If one of those nodes does not have enough cpu or memory resources then it will 
 where the driver (in this case Portworx) is running.
 
 
---- Tests
+## Unit Tests
+
+A sample unit tests generated is at https://github.com/aiguards/stork/blob/unit-test/pkg/storkctl/factory_test.go
 
 Go to storkctl/pkg and run the following command to run the tests:
 ```./test_helper.sh```
