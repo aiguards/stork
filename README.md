@@ -241,3 +241,29 @@ The pod will then get scheduled on a node in the cluster where one of the replic
 If one of those nodes does not have enough cpu or memory resources then it will get scheduled on any other node in the cluster
 where the driver (in this case Portworx) is running.
 
+
+--- Tests
+
+Go to storkctl/pkg and run the following command to run the tests:
+```./test_helper.sh```
+You will see a coverage report generated in the current directory. You can open the index.html file in a browser to see the coverage report.
+
+Report extract for coverage of factory.go:
+```
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:70:			NewFactory					100.0%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:74:			BindFlags					100.0%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:84:			BindGetFlags					100.0%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:89:			AllNamespaces					100.0%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:93:			GetQPS						100.0%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:97:			GetBurst					100.0%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:100:			GetNamespace					100.0%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:104:			GetAllNamespaces				44.4%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:120:			getKubeconfig					100.0%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:130:			GetConfig					100.0%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:134:			IsWatchSet					100.0%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:138:			UpdateConfig					27.3%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:153:			RawConfig					83.3%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:165:			GetOutputFormat					100.0%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:174:			setOutputFormat					100.0%
+github.com/libopenstorage/stork/pkg/storkctl/factory.go:178:			setNamespace					100.0%
+```

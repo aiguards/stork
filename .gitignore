@@ -6,3 +6,4 @@ help.1
 coverage.txt
 .vscode/
 .idea/
+.aider*
